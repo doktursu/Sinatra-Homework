@@ -1,0 +1,20 @@
+<form class="centered group" action="/" method="get">
+  <fieldset class="calculate-group">
+    <input class="number" type="number" step="any" name="first" autocomplete="off"><!--
+    --><select name="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select><!--
+    --><input class="number" type="number" step="any" name="second" autocomplete="off">
+  </fieldset>
+  <button class="btn-equals">=</button>
+</form>
+
+<% if @result %>
+<section class="result-group centered group">
+  <p class="result-string"><%= @first %> <color1><%= @operator_string %></color1> <%= @second %></p>
+  <p class="result"><%= @result %></p>
+</section>
+<% end %>

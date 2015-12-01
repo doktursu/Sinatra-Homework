@@ -1,0 +1,18 @@
+
+<form class="centered contact-group" action="/contact_us" method="get">
+  <h2 class="group">Get in touch!</h2>
+  <fieldset class="group">
+    <input type="text" name="name" placeholder="Name" autocomplete="off">
+    <input type="email" name="email" placeholder="Email address" autocomplete="off">
+    <textarea name="message" placeholder="Your message"></textarea>
+</fieldset>
+<button class="btn-submit">Go!</button>
+</form>
+
+<section class="centered">
+  <p><% if @name != '' && @email != '' %>
+    <%= "Rad #{@first_name}. We'll get back to you pronto" %>
+  <% else %>
+    <%= "Please enter a name and email, man" %>
+  <% end %></p>
+</section>

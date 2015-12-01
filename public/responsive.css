@@ -1,0 +1,15 @@
+/*
+  ========================================
+  RESPONSIVE
+  ========================================
+*/
+
+@media screen and (max-width: 600px) {
+   .centered {
+     width: 83.333333%;
+   }
+
+   .about-group img {
+     padding-top: 0;
+     margin-top: -10px;
+}
