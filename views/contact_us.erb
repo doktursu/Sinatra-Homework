@@ -9,10 +9,12 @@
 <button class="btn-submit">Go!</button>
 </form>
 
+<% if @name && @email %>
 <section class="centered">
-  <p><% if @name != '' && @email != '' %>
+  <p><% if @name && @name != '' && @email && @email != '' %>
     <%= "Rad #{@first_name}. We'll get back to you pronto" %>
   <% else %>
     <%= "Please enter a name and email, man" %>
   <% end %></p>
 </section>
+<% end %>
